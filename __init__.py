@@ -1,0 +1,1 @@
+from .pelican-javascript import *
