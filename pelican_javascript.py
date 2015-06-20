@@ -52,7 +52,7 @@ def add_files(gen, metadata):
                     link = f
                 else:
                     link = "%s/%s/%s" % (site_url, dirnames[key]), f)
-                html = formatters[key].format(f)
+                html = formatters[key].format(link)
                 htmls.append(html)
             metadata[key] = htmls
 
