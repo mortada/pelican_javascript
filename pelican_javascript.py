@@ -39,19 +39,22 @@ def add_files(gen, metadata):
     add the javascripts and/or stylesheets to the article
     """
     site_url = gen.settings['SITEURL']
-    formatters = {'stylesheets': '<link rel="stylesheet" href="{0}/css/{1}" type="text/css" />',
-                 'javascripts': '<script src="{0}/js/{1}"></script>'}
+    formatters = {'stylesheets': '<link rel="stylesheet" href="{0}" type="text/css" />',
+                  'javascripts': '<script src="{0}"></script>'}
+    dirnames = {'stylesheets': 'css',
+                'javascripts': 'js'}
     for key in ['stylesheets', 'javascripts']:
         if key in metadata:
             files = metadata[key].replace(" ", "").split(",")
-            links = []
+            htmls = []
             for f in files:
                 if f.startswith('http://') or f.startswith('https://'):
                     link = f
                 else:
-                    link = formatters[key].format(site_url, f)
-                links.append(link)
-            metadata[key] = links
+                    link = "%s/%s/%s" % (site_url, dirnames[key]), f)
+                html = formatters[key].format(f)
+                htmls.append(html)
+            metadata[key] = htmls
 
 def move_resources(gen):
     """
