@@ -1,1 +1,1 @@
-from .pelican-javascript import *
+from .pelican_javascript import *
