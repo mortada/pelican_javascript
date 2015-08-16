@@ -58,7 +58,7 @@ Tags: interactive visualization
 Slug: awesome-vis
 Author: Mortada Mehyar
 JavaScripts: https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js, my_vis_1.js, my_vis_2.js
-Styles: my_styles.css
+Stylesheets: my_styles.css
 ```
 
 Note that the files will be included in the same order specified.
