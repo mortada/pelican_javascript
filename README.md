@@ -45,7 +45,7 @@ Tags: interactive visualization
 Slug: awesome-vis
 Author: Mortada Mehyar
 JavaScripts: my_vis_1.js, my_vis_2.js
-Styles: my_styles.css
+Stylesheets: my_styles.css
 ```
 
 You can also include javascript libraries from a web resource without having to carry the files on your own. If the string starts with `http://` or `https://` it will be treated like a web resource, otherwise the plugin will look for the file under ``content/js` for javascript files, and `content/css` for CSS stylesheets.
