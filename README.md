@@ -13,7 +13,7 @@ To install the plugin, [follow the instructions on the Pelican plugin page.](htt
 
 ```python
 PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['pelican-javascript']
+PLUGINS = ['pelican_javascript']
 ```
 
 Directory Structure
