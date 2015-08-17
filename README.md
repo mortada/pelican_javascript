@@ -1,4 +1,4 @@
-pelican-javascript
+pelican_javascript
 ===============
 
 This Pelican plugin makes it easy to embed Javascript files and CSS stylesheets into individual Pelican blog articles.
