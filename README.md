@@ -13,7 +13,7 @@ To install the plugin, [follow the instructions on the Pelican plugin page.](htt
 
 ```python
 PLUGIN_PATH = 'pelican-plugins'
-PLUGINS = ['pelican-javascript']
+PLUGINS = ['pelican_javascript']
 ```
 
 Directory Structure
@@ -45,7 +45,7 @@ Tags: interactive visualization
 Slug: awesome-vis
 Author: Mortada Mehyar
 JavaScripts: my_vis_1.js, my_vis_2.js
-Styles: my_styles.css
+Stylesheets: my_styles.css
 ```
 
 You can also include javascript libraries from a web resource without having to carry the files on your own. If the string starts with `http://` or `https://` it will be treated like a web resource, otherwise the plugin will look for the file under ``content/js` for javascript files, and `content/css` for CSS stylesheets.
@@ -58,7 +58,7 @@ Tags: interactive visualization
 Slug: awesome-vis
 Author: Mortada Mehyar
 JavaScripts: https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js, my_vis_1.js, my_vis_2.js
-Styles: my_styles.css
+Stylesheets: my_styles.css
 ```
 
 Note that the files will be included in the same order specified.
