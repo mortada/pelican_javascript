@@ -51,7 +51,10 @@ def add_files(gen, metadata):
                 if f.startswith('http://') or f.startswith('https://'):
                     link = f
                 else:
-                    link = "%s/%s/%s" % (site_url, dirnames[key], f)
+                    if gen.settings['RELATIVE_URLS']:
+                        link = "%s/%s" % (dirnames[key], f)
+                    else:
+                        link = "%s/%s/%s" % (site_url, dirnames[key], f)
                 html = formatters[key].format(link)
                 htmls.append(html)
             metadata[key] = htmls
